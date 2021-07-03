@@ -1,0 +1,10 @@
+- use different separator for sed regex
+- handle sed errors
+- receive file_path to set connection strings
+- make as a command like git
+- save db credentials on file
+- use flags to define parameters (--pwd, --u, --data-source)
+- command set main web.config [fbch (config, set, define, ...) fbsolution]
+- command set daily's app.config for some microservice [fbch (config, set, define, ...) daily --BoletoOutAuthorization]
+- command add appSettings 
+- command add tokenSettings 
