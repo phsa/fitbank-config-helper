@@ -1,0 +1,67 @@
+fbch config repo.path "path/to/FitRepo"
+fbch config cstrings.userid "userIDLogin"
+fbch config cstrings.pwd "senhaInstanciaDB"
+fbch config cstrings.source "IP\Instancia"
+fbch config --list
+
+fbch setup -sln
+fbch setup --solution
+fbch setup -ms "MicroserviceProjectName"
+fbch setup --microservice="MicroserviceProjectName"
+
+fbch revert -sln
+fbch revert -ms "MicroserviceProjectName"
+
+fbch cstrings -sln
+fbch cstrings -ms "MicroserviceProjectName"
+
+fbch cstrings revert -sln
+fbch cstrings revert -ms "MicroserviceProjectName"
+
+fbch cstrings -sln -u
+fbch cstrings -sln -u "userIDLogin"
+fbch cstrings -sln --userid
+fbch cstrings -sln --userid="userIDLogin"
+fbch cstrings -sln -p
+fbch cstrings -sln -p "senhaInstanciaDB"
+fbch cstrings -sln --pwd
+fbch cstrings -sln --pwd="senhaInstanciaDB"
+fbch cstrings -sln -ds
+fbch cstrings -sln -ds "IP\Instancia"
+fbch cstrings -sln --data-source
+fbch cstrings -sln --data-source="IP\Instancia"
+
+fbch cstrings -ms "MicroserviceProjectName" -u
+fbch cstrings -ms "MicroserviceProjectName" -u "userIDLogin"
+fbch cstrings -ms "MicroserviceProjectName" --userid
+fbch cstrings -ms "MicroserviceProjectName" --userid="userIDLogin"
+fbch cstrings -ms "MicroserviceProjectName" -p
+fbch cstrings -ms "MicroserviceProjectName" -p "senhaInstanciaDB"
+fbch cstrings -ms "MicroserviceProjectName" --pwd
+fbch cstrings -ms "MicroserviceProjectName" --pwd="senhaInstanciaDB"
+fbch cstrings -ms "MicroserviceProjectName" -ds
+fbch cstrings -ms "MicroserviceProjectName" -ds "IP\Instancia"
+fbch cstrings -ms "MicroserviceProjectName" --data-source
+fbch cstrings -ms "MicroserviceProjectName" --data-source="IP\Instancia"
+
+fbch cstrings revert -sln -u
+fbch cstrings revert -sln -p
+fbch cstrings revert -sln -ds
+
+fbch cstrings revert -ms "MicroserviceProjectName" -u
+fbch cstrings revert -ms "MicroserviceProjectName" -p
+fbch cstrings revert -ms "MicroserviceProjectName" -ds
+
+fbch asettings -sln
+fbch asettings -ms "MicroserviceProjectName"
+
+fbch asettings revert -sln
+fbch asettings revert -ms "MicroserviceProjectName"
+
+fbch asettings insert -sln -k "Key" -v "Value"
+fbch asettings insert -sln --key="Key" --value="Value"
+fbch asettings remove -sln -k "Key"
+fbch asettings remove -sln --key="Key"
+
+fbch asettings insert -ms "MicroserviceProjectName" -k "Key" -v "Value"
+fbch asettings remove -ms "MicroserviceProjectName" -k "Key"
